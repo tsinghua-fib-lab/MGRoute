@@ -1,10 +1,11 @@
+! assets/
+! data/beijing
+! assets/mrgrp_performance.png
+! assets/mrgrp.png
 __pycache__/
 logs/
 data/
 experiments_scripts/
-
-! assets/
-! data/beijing
 
 *.npz
 *.npy
@@ -12,9 +13,8 @@ experiments_scripts/
 *.pkl
 
 *.jpg
+
 *.png
-! assets/mrgrp_performance.png
-! assets/mrgrp.png
 *.pdf
 
 *.txt
