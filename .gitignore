@@ -1,7 +1,4 @@
-! assets/
-! data/beijing
-! assets/mrgrp_performance.png
-! assets/mrgrp.png
+
 __pycache__/
 logs/
 data/
@@ -16,3 +13,8 @@ experiments_scripts/
 *.pdf
 
 *.txt
+
+!assets/
+!data/beijing
+!assets/mrgrp_performance.png
+!assets/mrgrp.png
