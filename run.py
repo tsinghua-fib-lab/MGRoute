@@ -93,7 +93,6 @@ if __name__ == '__main__':
     parser.add_argument('--val_use_ratio', type=float, default=1.0, help='use val ratio')
     parser.add_argument('--test_use_ratio', type=float, default=1.0, help='use test ratio')
     parser.add_argument('--dataset_type', type=str, default='')
-
     parser.add_argument('--test_only', action='store_true', help='test only')
 
     args = parser.parse_args()
