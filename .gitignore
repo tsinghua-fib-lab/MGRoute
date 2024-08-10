@@ -13,6 +13,8 @@ experiments_scripts/
 
 *.jpg
 *.png
+! assets/mrgrp_performance.png
+! assets/mrgrp.png
 *.pdf
 
 *.txt
