@@ -1,0 +1,15 @@
+__pycache__/
+logs/
+data/
+experiments_scripts/
+
+*.npz
+*.npy
+*.h5
+*.pkl
+
+*.jpg
+*.png
+*.pdf
+
+*.txt
