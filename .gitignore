@@ -3,6 +3,8 @@ logs/
 data/
 experiments_scripts/
 
+! assets/
+
 *.npz
 *.npy
 *.h5
