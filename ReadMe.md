@@ -18,6 +18,9 @@ We propose a Multi-Relational Graph-based Route Prediction (MRGRP) method, which
 ```
 python run.py --dataset_name <your_data_folder>
 ```
+## Diagram of multi-relational graph
+The diagram of our proposed multi-relational graph is as follows.
+![](./supplement_materials/2.1_00.png)
 
 ## Generation of route reference encoding
 We illustrate the process of route reference encoding generation, which is employed in the decoder, as follows.
