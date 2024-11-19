@@ -1,8 +1,8 @@
-# MRGRP
+# WWW2025Industry-MRGRP
 ## Summary
 
-![](./assets/model_00.png)
-We propose a Multi-Relational Graph-based Route Prediction (MRGRP) method, which enables fine-grained modeling of the correlations among tasks influencing couriers' decision-making and achieves personalized prediction. We encode spatial and temporal proximity, along with the pickup-delivery relationships of tasks, into a multi-relational graph, then design a GraphFormer architecture to capture these complex correlations. Furthermore, we introduce a route decoder that leverages information about couriers as well as dynamic distance and time contexts for personalized prediction. It also utilizes existing route solutions as a reference to find better outcomes.
+![](./assets/modelfig_00.png)
+We propose a Multi-Relational Graph-based Route Prediction (MRGRP) method, which enables fine-grained modeling of the correlations among tasks influencing couriers' decision-making and achieves accurate prediction. We encode spatial and temporal proximity, along with the pickup-delivery relationships of tasks, into a multi-relational graph, then design a GraphFormer architecture to capture these complex correlations. Furthermore, we introduce a route decoder that leverages information about couriers as well as dynamic distance and time contexts for personalized prediction. It also utilizes existing route solutions as a reference to find better outcomes.
 
 ## Installation
 
@@ -18,13 +18,6 @@ We propose a Multi-Relational Graph-based Route Prediction (MRGRP) method, which
 ```
 python run.py --dataset_name <your_data_folder>
 ```
-## Diagram of multi-relational graph
-The diagram of our proposed multi-relational graph is as follows.
-![](./supplement_materials/2.1_00.png)
-
-## Generation of route reference encoding
-We illustrate the process of route reference encoding generation, which is employed in the decoder, as follows.
-![](./supplement_materials/decoder_00.png)
 
 ## Performance
 The metrics include KRC, LSD, ED, SR@k, HR@k, ACC@k.KRC, LSD, and ED quantify the similarity between the predicted route and the ground truth from the global perspective, while SR@k, HR@k, and ACC@k measure their local similarity. Higher KRC, HR@k, ACC@k, SR@k, and lower LSD, ED indicate better performance of methods.
@@ -35,17 +28,26 @@ The metrics include KRC, LSD, ED, SR@k, HR@k, ACC@k.KRC, LSD, and ED quantify th
 ## Hyperparameter study
 We illustrate the results of hyperparameter studies as follows. 
 ### The number of MRGC layers
-![](./supplement_materials/gnn_00.png)
+![](./supplement_materials/gnn.png)
 
 ### Task embedding sizes
-![](./supplement_materials/emb_00.png)
+![](./supplement_materials/emb.png)
 
 ### Relative weight of the loss function
-![](./supplement_materials/alpha_00.png)
+![](./supplement_materials/alpha.png)
 From the results, we find that the hyperparameter settings are:
 - **\# MRGC Layers**: 3
 - **Task embedding sizes**: 256
-- **Relative weight**: 0.01
+- **Relative weight**: 0.1
+
+## Diagram of multi-relational graph
+The diagram of our proposed multi-relational graph is as follows.
+![](./supplement_materials/2.1_00.png)
+
+## Generation of route reference encoding
+We illustrate the process of route reference encoding generation, which is employed in the decoder, as follows.
+![](./supplement_materials/decoder_00.png)
+
 
 ## Notes
 
